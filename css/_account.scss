@@ -1,0 +1,163 @@
+
+
+#header{
+    background:none;
+
+    position: absolute;
+   z-index: 800;
+   width: 100%;
+   border-bottom: 1px solid rgb(12, 168, 216);
+    .navbar{
+
+       .navbar-brand{
+
+           font-size: 2em;
+
+       }
+         li{
+
+          font-size: 1em;
+            a{
+             color:rgb(245, 237, 237);
+                 &:hover{
+                 color:rgb(93, 172, 172)
+                 }
+             }
+         }
+     }
+}
+
+
+.container-fluid{
+    background: url(../img/runbk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    .account{
+
+        .row{
+            margin: 30px;
+          padding-bottom: 150px;
+          .form{
+              .form-group{
+                  .row{
+                      .acc{
+                        a{
+                            color: yellow;
+                        }
+                      }
+
+                  }
+
+    
+                input{
+                    height: 60px;
+                    width: 400px;
+                  border-radius: 40px;
+                  border: 1px solid black;
+                  box-shadow: rgb(161, 31, 31);
+    
+                  &:hover{
+                      background-color: rgb(187, 214, 144);
+                  }
+                }
+            } 
+                  
+                  }
+                 
+              
+              .btn{
+                  width: 190px;
+                  height: 50px;
+    
+                margin-top: 15px;
+                border-radius: 15px;
+                background-color: rgb(193, 189, 216);
+                color: rgb(108, 61, 155);
+                &:hover{
+                    background-color: rgb(179, 157, 201);
+                    color: white;
+                }
+            }
+        }
+    }
+    
+}
+
+
+#footer{
+    background-color: chartreuse;
+
+    .contaner{
+        padding: 20px;
+        .row{
+            padding-bottom: 50px;
+        }
+    }
+    padding: 60px;
+
+    a:hover{
+        text-decoration: none;
+    }
+    .col-lg-3{
+        .foot-item{
+            li{
+                a{
+                    color: rgb(170, 163, 163);
+                }
+                a:hover{
+                    color: red;
+                }
+
+                    color: red;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+        h4{
+            padding: 50px 0px;
+            color: rgb(240, 224, 224);
+        }
+        h4:hover{
+            color: rgb(82, 55, 55);
+            transition: 0.3s ease-in-out;
+        }
+        .social-links{
+            ul{
+                li{
+                    margin-right: 20px;
+                    a{
+                        i{
+                            color: red;
+                        }
+                        i:hover{
+                            color: rgb(175, 100, 100);
+                        }
+                    }
+                }
+            }
+        }
+    background-color: #0a0a0a;
+    .copywrite{
+        border-top: 1px solid rgb(71, 71, 62);
+
+        padding-top: 40px;
+        .row{
+            h5{
+                color: rgb(241, 14, 14);
+
+            }
+
+            ul{
+                h5{
+                    display: inline-block;
+                    margin-right: 45px;
+                    color: rgb(236, 20, 20);
+                }
+            }
+        }
+    }
+}

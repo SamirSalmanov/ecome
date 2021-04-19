@@ -1,0 +1,21 @@
+
+#header{
+    position: absolute;
+   z-index: 800;
+   width: 100%;
+    .navbar{
+
+       .navbar-brand{
+           font-size: 2em;
+       }
+         li{
+          font-size: 1em;
+            a{
+             color:rgb(221, 192, 192);
+                 &:hover{
+                 color:rgb(27, 63, 63)
+                 }
+             }
+         }
+     }
+}
