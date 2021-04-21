@@ -1,0 +1,101 @@
+#header {
+  position: absolute;
+  z-index: 800;
+  width: 100%;
+}
+
+#header .navbar .container .navbar-brand {
+  font-size: 2em;
+}
+
+#header .navbar .container li {
+  font-size: 1em;
+}
+
+#header .navbar .container li a {
+  color: #e2d4d4;
+}
+
+#header .navbar .container li a:hover {
+  color: #284242;
+}
+
+.cart-page {
+  margin: 80px auto;
+}
+
+.cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#footer {
+  background-color: chartreuse;
+  padding: 60px;
+  background-color: #0a0a0a;
+}
+
+#footer .contaner {
+  padding: 20px;
+}
+
+#footer .contaner .row {
+  padding-bottom: 50px;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+
+#footer .col-lg-3 .foot-item li {
+  color: red;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#footer .col-lg-3 .foot-item li a {
+  color: #aaa3a3;
+}
+
+#footer .col-lg-3 .foot-item li a:hover {
+  color: red;
+}
+
+#footer h4 {
+  padding: 50px 0px;
+  color: #f0e0e0;
+}
+
+#footer h4:hover {
+  color: #523737;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#footer .social-links ul li {
+  margin-right: 20px;
+}
+
+#footer .social-links ul li a i {
+  color: red;
+}
+
+#footer .social-links ul li a i:hover {
+  color: #af6464;
+}
+
+#footer .copywrite {
+  border-top: 1px solid #47473e;
+  padding-top: 40px;
+}
+
+#footer .copywrite .row h5 {
+  color: #f10e0e;
+}
+
+#footer .copywrite .row ul h5 {
+  display: inline-block;
+  margin-right: 45px;
+  color: #ec1414;
+}
+/*# sourceMappingURL=cart.css.map */
