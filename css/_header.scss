@@ -1,15 +1,22 @@
 
 #header{
-    position: absolute;
+    position: relative;
+    background: #000;
+    top: 0;
+    left: 0;
    z-index: 800;
    width: 100%;
      .navbar{
-         .container{
              .navbar-brand{
                  font-size: 2em;
                  }
                 li{
                font-size: 1em;
+               .dropdown-menu{
+                   a{
+                       color:#000
+                   }
+               }
                a{
                   color:rgb(226, 212, 212);
                       &:hover{
@@ -17,7 +24,6 @@
                     }
                 }
             }
-         }
      }
 
 }

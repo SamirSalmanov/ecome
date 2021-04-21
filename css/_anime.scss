@@ -1,17 +1,14 @@
-#pro{
     .anime{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 55vh;
-        background: #fcfcfc;
+        overflow: hidden;
+         background: #fcfcfc;
         ul{
             position: relative;
-            display: flex;
+            width: 100%;
             li{
                 list-style: none;
                 label{
                     position: relative;
+                    width: 100%;
                     input[type="checkbox"]{
                         position: absolute;
                         opacity: 0;
@@ -19,8 +16,7 @@
                       }
                       .icon{
                         position: relative;
-                        width: 360px;
-                        height: 360px;
+                        height: 200px;
                         background: #fafafd;
                         color: #555;
                         font-size: 24px;
@@ -70,8 +66,7 @@
 
     }
  
-}
-
+ 
 
 
 

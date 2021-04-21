@@ -7,24 +7,31 @@
 }
 
 #header {
-  position: absolute;
+  position: relative;
+  background: #000;
+  top: 0;
+  left: 0;
   z-index: 800;
   width: 100%;
 }
 
-#header .navbar .container .navbar-brand {
+#header .navbar .navbar-brand {
   font-size: 2em;
 }
 
-#header .navbar .container li {
+#header .navbar li {
   font-size: 1em;
 }
 
-#header .navbar .container li a {
+#header .navbar li .dropdown-menu a {
+  color: #000;
+}
+
+#header .navbar li a {
   color: #e2d4d4;
 }
 
-#header .navbar .container li a:hover {
+#header .navbar li a:hover {
   color: #5e9292;
 }
 
@@ -89,18 +96,18 @@
 
 .collection .small-container {
   padding-right: 25px;
-  padding-right: 25px;
+  padding-left: 25px;
 }
 
-.collection .small-container .col-lg-3 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-  min-width: 250px;
-  margin-bottom: 30px;
+.collection .collect-item {
+  margin-bottom: 15px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
-.collection .small-container .col-lg-3 img {
-  width: auto;
+.collection .collect-item:hover {
+  -webkit-transform: translateY(-20px) scale(1.1);
+          transform: translateY(-20px) scale(1.1);
 }
 
 .collection .new {
@@ -186,7 +193,13 @@
           box-shadow: 0 0 20px 0 #b66e9e;
 }
 
-.products .col-lg-3 .product-item .pro-img .sale-new {
+.products .col-lg-3 .product-item .pro-img .wish-list {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.products .col-lg-3 .product-item .pro-img .sale-new, .products .col-lg-3 .product-item .pro-img .sale {
   position: absolute;
   left: 10px;
   top: 20px;
@@ -196,6 +209,11 @@
   border-radius: 4px;
   -webkit-box-shadow: 0 0 20px 0 #442020;
           box-shadow: 0 0 20px 0 #442020;
+}
+
+.products .col-lg-3 .product-item .pro-img .sale {
+  left: 10px;
+  top: 65px;
 }
 
 .products .col-lg-3 .product-item .pro-add-cart {
@@ -368,28 +386,6 @@
   color: #ec1414;
 }
 
-#header {
-  position: absolute;
-  z-index: 800;
-  width: 100%;
-}
-
-#header .navbar .container .navbar-brand {
-  font-size: 2em;
-}
-
-#header .navbar .container li {
-  font-size: 1em;
-}
-
-#header .navbar .container li a {
-  color: #e2d4d4;
-}
-
-#header .navbar .container li a:hover {
-  color: #284242;
-}
-
 .bc-container-fluid {
   background: url(../img/runbk.jpg);
   background-repeat: no-repeat;
@@ -399,16 +395,15 @@
   padding-bottom: 150px;
 }
 
-.bc-container-fluid .account .row {
-  margin: 30px;
-  padding-bottom: 150px;
+.bc-container-fluid .account {
+  padding: 20px;
 }
 
-.bc-container-fluid .account .row .form .form-group .row .acc a {
+.bc-container-fluid .account .row .form .acc a {
   color: yellow;
 }
 
-.bc-container-fluid .account .row .form .form-group input {
+.bc-container-fluid .account .row .form input {
   height: 60px;
   width: 400px;
   border-radius: 40px;
@@ -417,11 +412,11 @@
           box-shadow: #a11f1f;
 }
 
-.bc-container-fluid .account .row .form .form-group input:hover {
+.bc-container-fluid .account .row .form input:hover {
   background-color: #bbd690;
 }
 
-.bc-container-fluid .account .row .btn {
+.bc-container-fluid .account .btn {
   width: 190px;
   height: 50px;
   margin-top: 15px;
@@ -430,7 +425,7 @@
   color: #6c3d9b;
 }
 
-.bc-container-fluid .account .row .btn:hover {
+.bc-container-fluid .account .btn:hover {
   background-color: #b39dc9;
   color: white;
 }
@@ -505,45 +500,34 @@
   color: #ec1414;
 }
 
-#pro .anime {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 55vh;
+.anime {
+  overflow: hidden;
   background: #fcfcfc;
 }
 
-#pro .anime ul {
+.anime ul {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
 }
 
-#pro .anime ul li {
+.anime ul li {
   list-style: none;
 }
 
-#pro .anime ul li label {
+.anime ul li label {
   position: relative;
+  width: 100%;
 }
 
-#pro .anime ul li label input[type="checkbox"] {
+.anime ul li label input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-#pro .anime ul li label .icon {
+.anime ul li label .icon {
   position: relative;
-  width: 360px;
-  height: 360px;
+  height: 200px;
   background: #fafafd;
   color: #555;
   font-size: 24px;
@@ -564,7 +548,7 @@
           box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05), 4px 4px 6px rgba(0, 0, 0, 0.2), inset -1px -1px 4px rgba(255, 255, 255, 0.05), inset 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-#pro .anime ul li label .icon:before {
+.anime ul li label .icon:before {
   content: '';
   position: absolute;
   top: 2px;
@@ -576,15 +560,14 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-#pro .anime ul li label input[type="checkbox"]:checked ~ .icon {
+.anime ul li label input[type="checkbox"]:checked ~ .icon {
   -webkit-box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.05), inset 4px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.05), inset 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#pro .anime ul li label input[type="checkbox"]:checked ~ .icon .ico {
+.anime ul li label input[type="checkbox"]:checked ~ .icon .ico {
   color: #00f3ff;
-  text-shadow: 0 0 15px #00f3ff,
- 0 0 25px #00f3ff;
+  text-shadow: 0 0 15px #00f3ff, 0 0 25px #00f3ff;
   -webkit-animation: animate 5s linear infinite;
           animation: animate 5s linear infinite;
 }
@@ -603,94 +586,82 @@
   }
 }
 
-#pro .anime {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 55vh;
-  background: #fcfcfc;
+.cart-page {
+  margin: 5em 0;
 }
 
-#pro .anime ul {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.cart-page table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-#pro .anime ul li {
-  list-style: none;
+#footer {
+  background-color: chartreuse;
+  padding: 60px;
+  background-color: #0a0a0a;
 }
 
-#pro .anime ul li label {
-  position: relative;
+#footer .contaner {
+  padding: 20px;
 }
 
-#pro .anime ul li label input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+#footer .contaner .row {
+  padding-bottom: 50px;
 }
 
-#pro .anime ul li label .icon {
-  position: relative;
-  width: 360px;
-  height: 360px;
-  background: #fafafd;
-  color: #555;
-  font-size: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  margin: 0 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  -webkit-box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05), 4px 4px 6px rgba(0, 0, 0, 0.2), inset -1px -1px 4px rgba(255, 255, 255, 0.05), inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05), 4px 4px 6px rgba(0, 0, 0, 0.2), inset -1px -1px 4px rgba(255, 255, 255, 0.05), inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+#footer a:hover {
+  text-decoration: none;
 }
 
-#pro .anime ul li label .icon:before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: calc(100% - 5px);
-  height: calc(100% - 5px);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+#footer .col-lg-3 .foot-item li {
+  color: red;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-#pro .anime ul li label input[type="checkbox"]:checked ~ .icon {
-  -webkit-box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.05), inset 4px 4px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.05), inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+#footer .col-lg-3 .foot-item li a {
+  color: #aaa3a3;
 }
 
-#pro .anime ul li label input[type="checkbox"]:checked ~ .icon .ico {
-  color: #00f3ff;
-  text-shadow: 0 0 15px #00f3ff,
- 0 0 25px #00f3ff;
-  -webkit-animation: animate 5s linear infinite;
-          animation: animate 5s linear infinite;
+#footer .col-lg-3 .foot-item li a:hover {
+  color: red;
 }
 
-@keyframes animate {
-  0% {
-    -webkit-filter: hue-rotate(360deg);
-            filter: hue-rotate(360deg);
-  }
+#footer h4 {
+  padding: 50px 0px;
+  color: #f0e0e0;
+}
+
+#footer h4:hover {
+  color: #523737;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#footer .social-links ul li {
+  margin-right: 20px;
+}
+
+#footer .social-links ul li a i {
+  color: red;
+}
+
+#footer .social-links ul li a i:hover {
+  color: #af6464;
+}
+
+#footer .copywrite {
+  border-top: 1px solid #47473e;
+  padding-top: 40px;
+}
+
+#footer .copywrite .row h5 {
+  color: #f10e0e;
+}
+
+#footer .copywrite .row ul h5 {
+  display: inline-block;
+  margin-right: 45px;
+  color: #ec1414;
 }
 /*# sourceMappingURL=style.css.map */
