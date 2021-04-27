@@ -1,12 +1,162 @@
 
-.cart-page{
-    margin: 5em 0;
-    table{
-        width: 100%;
-        border-collapse: collapse;
+
+
+.container{
+    padding-bottom: 30px;
+    h1{
+        padding: 20px 0;
     }
+    .cart{
+        display: flex;
+        .products{
+            flex: 0.55;
+            width: 80%;
+            .product{
+                display: flex;
+                width: 90%;
+                height: 230px;
+                overflow: hidden;
+                margin-bottom: 30px;
+                &:hover{
+                    border: none;
+                    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+                    transform: scale(1.10);
+                    transition: 0.3s;
+                }
+                img{
+                    box-shadow: 0 0 20px 0 rgb(194, 178, 171);
+                    border-radius: 15px;
+                }
+                img:hover{
+                    transition: 0.3s;
+                    transform: scale(1.07);
+                }
+                .product-info{
+                    padding-left: 20px;
+                    padding: 20px;
+                    margin: 4px;
+                    width: 100%;
+                    position: relative;
+                   
+                    .product-name, .product-price, .product-offer{
+                        margin-bottom: 30px;
+                        
+                    }
+                    .product-remove{
+                        position: absolute;
+                        bottom: 20px;
+                        right: 20px;
+                        padding: 10px 25px;
+                        background-color: rgb(59, 211, 21);
+                        color: rgb(131, 16, 16);
+                        cursor: pointer;
+                        border-radius: 25px;
+                        &:hover{
+                            background-color: rgb(233, 16, 16);
+                            color: rgb(225, 235, 221);
+                            transition: 0.3s;
+                            transform: scale(1.15);
+                            border: 1px solid red;
+                            box-shadow: 0 0 20px 0 rgb(77, 47, 33);
+
+                        }
+                    }
+                    .product-quantity input{
+                        width: 60px;
+                        padding: 5px;
+                        text-align: center;
+                        box-shadow: 0 0 20px 0 rgb(194, 178, 171);
+                        border-radius: 10px;
+                        border: none;
+                        border: 1px solid rgb(216, 210, 210);
+    
+                    }
+                    .far{
+                        margin-right: 5px;
+                    }
+    
+                }
+    
+            }
+
+        }
+        .cart-total{
+            margin-left: 20px;
+            width: 100%;
+            padding: 20px;
+            height: 240px;
+            border: 1px solid silver;
+            border-radius: 5px;
+            box-shadow: 0 0 20px 0 rgb(179, 132, 110);
+            &:hover{
+                background-color: rgb(187, 132, 132);
+            }
+            p{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                font-size: 20px;
+                margin-bottom: 25px;
+
+            }
+            a{
+                display: block;
+                text-align: center;
+                height: 35px;
+                list-style: none;
+                border: 40px;
+                border-radius: 10px;
+                background-color: rgb(238, 231, 236);
+                text-decoration: none;
+                font-size: 20px;
+              
+            }
+            
+        }
+        
+    }
+
+} 
+@media screen and (max-width: 700px){
+    .remove{
+        display: none;
+    }
+    .product{
+        height: 150px;
+        .img{
+            height: 150px;
+            width: 200px;
+
+
+        }
+        .product-name, .product-price, .product-offer{
+            margin-bottom: 10px;
+        }
+
+    }
+    
 }
 
+
+@media screen and (max-width: 900px){
+    .cart{
+        flex-direction: column;
+    }
+    .cart-total{
+        margin-left: 0;
+        margin-bottom: 20px;
+     
+    }
+    
+}
+
+
+@media screen and (max-width: 1170px){
+    .container{
+        max-width: 90%;
+
+    }
+}
 
 
 #footer{
