@@ -40,8 +40,13 @@
     }
 }
 @media (max-width:768px){
-    
   .slider{
+    height: 60vh;
+
+    img{
+        height: 60vh;
+
+    }
       .carousel-caption{
           h5{
               font-size: 2em !important;
