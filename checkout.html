@@ -89,72 +89,94 @@
     <div class="container">
         <h2 style="font-size: 60px; border-bottom: 1px solid white; text-align: start;">Checkout Form</h2>
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-9">
                 <div class="action-page">
                     <div class="row">
-                        <div class="col-lg-5">
-                            <div class="billing">
-                                <h2>Billing Address</h2>
-                                <lebel class="leb" for="fname"><i class="fas fa-user"></i> &nbsp; Full Name</lebel>
-                                <input class="inp" type="text" id="fname" name="firstname" placeholder="Samir" required>
-    
-                                <lebel class="leb" for="email"><i class="fas fa-envelope"></i> &nbsp; Email</lebel>
-                                <input class="inp" type="text" id="fname" name="email" placeholder="samir@exemple.com" required>
-    
-                                <lebel class="leb" for="adr"><i class="fas fa-address-card"></i> &nbsp; Address</lebel>
-                                <input class="inp" type="text" id="adr" name="firstname" placeholder="Ctry, City, Str." required>
-    
-                                <lebel class="leb" for="city"><i class="fas fa-globe"></i> &nbsp; City</lebel>
-                                <input class="inp" type="text" id="city" name="firstname" placeholder="Baku" required>
-                                <div class="row state">
-                                    <div class="st pr-4">
-                                        <label for="state" style="display: block;">State</label>
-                                        <input class="sz" type="text" id="state" name="state" placeholder="nn" required>
-                                    </div>
-                                    <div class="zip">
-                                        <label for="zip" style="display: block;">ZIP</label>
-                                        <input class="sz" type="text" id="zip" name="state" placeholder="zip" required>
-                                    </div>
+                        <div class="col-lg-6">
+                            <h2>Billing Address</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Payment</h2>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="leb" for="fname"><i class="fas fa-user"></i> &nbsp; Full Name</label>
+                            <input class="inp" type="text" id="fname" name="firstname" placeholder="Samir" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ico">
+                                <label style="color: white;" for="fname">Accepted Card</label>
+                                <div class="icons">
+                                    <ul class="ule p-0 d-flex justify-content-lg-between">
+                                       <li ><img src="img/icons/visa.png" width="50px" alt=""></li>
+                                        <li ><img src="img/icons/mastercard.png" width="50px" alt=""></li>
+                                        <li ><img src="img/icons/amex.png" width="50px" alt=""></li>
+                                        <li ><img src="img/icons/discover.png" width="50px" alt=""></li>
+                                    </ul>
+                                   
                                 </div>
+                            </div>
+                          
+                        </div>
+                        <div class="col-6">
+                            <label class="leb" for="email"><i class="fas fa-envelope"></i> &nbsp; Email</label>
+                            <br>
+                            <input class="inp" type="text" id="fname" name="email" placeholder="samir@exemple.com" required>
+
+                        </div>
+                        <div class="col-6">
+                            <label  class="lebel" for="cname">Name on Card</label>
+                            <input class="inpu" type="text"type="text" id="cname" name="cardname" placeholder="Samir Salman" required>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="leb" for="adr"><i class="fas fa-address-card"></i> &nbsp; Address</label>
+                                
+                            <input class="inp" type="text" id="adr" name="firstname" placeholder="Ctry, City, Str." required>
+    
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="lebel" for="ccnum">Credit Card</label>
+                            <input class="inpu" type="text" type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="leb" for="city"><i class="fas fa-globe"></i> &nbsp; City</label>
+                            <br>
+                            <input class="inp" type="text" id="city" name="firstname" placeholder="Baku" required>
+                        </div>
+                        <div class="col-lg-6">
+                            <label class="lebel"  for="expmonth">Name on Card</label>
+                            <input class="inpu" type="text" type="text" id="cname" name="expmonth" placeholder="September" required/>
+                        </div>
+                       
+                        <div class="col-lg-6">
+                            <div class="st">
+                                <label for="state" style="display: block;">State</label>
+                                <input class="sz" type="text" id="state" name="state" placeholder="nn" required>
+                                <div class="zip">
+                                    <label for="zip" style="display: block;">ZIP</label>
+                                    <input class="sz" type="text" id="zip" name="state" placeholder="zip" required>
+                                </div>
+                            </div>
+                    
+                        </div>
+                      
+                        <div class="col-lg-6">
+                            <label for="expire" style="display: block;">Exp. Year</label>
+                            <input class="ex" type="text"type="text" id="expire" name="expire" placeholder="2021" required>
+                            <div class="cvv">
+                                <label for="cvv" style="display: block;">CVV</label>
+                                <input class="ex" type="text"type="text" id="cvv" name="cvv" placeholder="265" required>
+                            </div>
+                       </div>
+                        
+                        <div class="col-lg-6">
+                          
+                        </div>
                             </div>
                         </div>
-                        <div class="col-lg-5 pl-4">
-                            <div class="payment">
-                                <h2>Payment</h2>
-                                <div class="ico">
-                                    <label style="color: white;" for="fname">Accepted Card</label>
-                                    <div class="icons">
-                                        <ul class="ule d-flex justify-content-lg-between">
-                                           <li ><img src="img/icons/visa.png" width="50px" alt=""></li>
-                                            <li ><img src="img/icons/mastercard.png" width="50px" alt=""></li>
-                                            <li ><img src="img/icons/amex.png" width="50px" alt=""></li>
-                                            <li ><img src="img/icons/discover.png" width="50px" alt=""></li>
-                                        </ul>
-                                       
-                                    </div>
-                                </div>
-                              
-                                <label  class="lebel" for="cname">Name on Card</label>
-                                 <input class="inpu" type="text"type="text" id="cname" name="cardname" placeholder="Samir Salman" required>
-    
-                                 <label class="lebel" for="ccnum">Credit Card</label>
-                                 <input class="inpu" type="text" type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000" required>
-    
-                                 <label class="lebel"  for="expmonth">Name on Card</label>
-                                <input class="inpu" type="text" type="text" id="cname" name="expmonth" placeholder="September" required>
-                                <div class="row exp">
-                                    <div class="expire">
-                                        <label for="expire" style="display: block;">Exp. Year</label>
-                                        <input class="ex" type="text"type="text" id="expire" name="expire" placeholder="2021" required>
-                                    </div>
-                                    <div class="cvv">
-                                        <label for="cvv" style="display: block;">CVV</label>
-                                        <input class="ex" type="text"type="text" id="cvv" name="cvv" placeholder="265" required>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-2">
+                    </div>
+                            <div class="col-lg-3">
                                 <div class="box">
                                     <p style="display: block;"><a href="#" style="display: flex; justify-content: space-between;">Card <span class="price" style="color: rgb(155, 33, 33);"><i class="fas fa-cart-arrow-down"> </i>&nbsp;<b>4</b></span></a> </p>
                                     <p><a href="#">Jackets</a><span class="price" >250&nbsp;$</span></p>

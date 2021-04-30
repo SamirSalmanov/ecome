@@ -58,6 +58,7 @@
         .row{
             h5{
                 color: rgb(241, 14, 14);
+                font-size: large;
 
             }
 
@@ -70,6 +71,27 @@
             }
         }
     }
+}
+@media (max-width: 768px){
+    .copywrite{
+        .follow{
+            justify-content: center;
+            .mini-follow{
+        ul {
+margin-left: 60px;
+ 
+           
+        }
+            }
+            .social-links{
+            text-align: center;
+          
+        }
+        }
+
+    }
+
+    
 }
 
 
