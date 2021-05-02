@@ -42,7 +42,6 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">MEN &nbsp;</a>
                       <a class="dropdown-item" href="#">WOMAN &nbsp; </a>
-                      <!-- <div class="dropdown-divider"></div> -->
                       <a class="dropdown-item" href="#">KIDS &nbsp; </a>
                       <a class="dropdown-item" href="#">SHOE &nbsp; </a>
                     </div>
@@ -54,7 +53,6 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Azərbaycan dili &nbsp;<img src="img/icons/azerbaijan.png" width="20px" alt=""></a>
                       <a class="dropdown-item" href="#">English &nbsp; <img src="img/icons/united-kingdom.png" width="20px" alt=""></a>
-                      <!-- <div class="dropdown-divider"></div> -->
                       <a class="dropdown-item" href="#">Русский &nbsp; <img src="img/icons/russia.png" width="20px" alt=""></a>
                     </div>
                   </li>
@@ -65,13 +63,31 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">AZN &nbsp ₼</a>
                       <a class="dropdown-item" href="#">DOLLAR $</a>
-                      <!-- <div class="dropdown-divider"></div> -->
                       <a class="dropdown-item" href="#">EURO €</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-search"></i>
+
+
+                    </a>
+                    <div style="background-color: rgb(163, 163, 117); width: 300px;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <input style="width: 90%; padding-left: 5px; margin-left: 10px;" class="search" type="text" id="search" name="search" placeholder="search" required>
                     </div>
                   </li>
               </ul>
               <div class="cart" >
-                <a href=""><img src="img/icons/shopping.png"  width="50px" alt=""></a>
+                <a href=""><img src="img/icons/shopping.png"  width="50px" alt="">
+                    <span style="color: rgb(29, 58, 185); position: absolute;font-size: 20px; font-family: cursive; background-color: rgb(134, 155, 85);width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    text-align: center;
+                    border-radius: 15px;" class="action-num">0</span>
+                </a>
+                
+                
             </div>
        
             </div>
@@ -92,107 +108,111 @@
             <div class="col-lg-9">
                 <div class="action-page">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <h2>Billing Address</h2>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <h2>Payment</h2>
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <label class="leb" for="fname"><i class="fas fa-user"></i> &nbsp; Full Name</label>
                             <input class="inp" type="text" id="fname" name="firstname" placeholder="Samir" required>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <div class="ico">
-                                <label style="color: white;" for="fname">Accepted Card</label>
+                                <label style=" display: block; color: white; text-align: end;" for="fname">Accepted Card</label>
                                 <div class="icons">
                                     <ul class="ule p-0 d-flex justify-content-lg-between">
-                                       <li ><img src="img/icons/visa.png" width="50px" alt=""></li>
-                                        <li ><img src="img/icons/mastercard.png" width="50px" alt=""></li>
-                                        <li ><img src="img/icons/amex.png" width="50px" alt=""></li>
-                                        <li ><img src="img/icons/discover.png" width="50px" alt=""></li>
+                                       <li ><img src="img/icons/visa.png" width="30px" alt=""></li>
+                                        <li ><img src="img/icons/mastercard.png" width="30px" alt=""></li>
+                                        <li ><img src="img/icons/amex.png" width="30px" alt=""></li>
+                                        <li ><img src="img/icons/discover.png" width="30px" alt=""></li>
                                     </ul>
                                    
                                 </div>
                             </div>
                           
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 col-6">
                             <label class="leb" for="email"><i class="fas fa-envelope"></i> &nbsp; Email</label>
                             <br>
                             <input class="inp" type="text" id="fname" name="email" placeholder="samir@exemple.com" required>
 
                         </div>
-                        <div class="col-6">
-                            <label  class="lebel" for="cname">Name on Card</label>
+                        <div class="col-6 col-6">
+                            <label  class="lebel" style="display: block; color: white; font-size: 20px; text-align: end;" for="cname">Name on Card</label>
                             <input class="inpu" type="text"type="text" id="cname" name="cardname" placeholder="Samir Salman" required>
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <label class="leb" for="adr"><i class="fas fa-address-card"></i> &nbsp; Address</label>
                                 
                             <input class="inp" type="text" id="adr" name="firstname" placeholder="Ctry, City, Str." required>
     
                         </div>
-                        <div class="col-lg-6">
-                            <label class="lebel" for="ccnum">Credit Card</label>
+                        <div class="col-lg-6 col-6">
+                            <label class="lebel" style="display: block; color: white; font-size: 20px; text-align: end;" for="ccnum">Credit Card</label>
                             <input class="inpu" type="text" type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000" required>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6">
                             <label class="leb" for="city"><i class="fas fa-globe"></i> &nbsp; City</label>
                             <br>
                             <input class="inp" type="text" id="city" name="firstname" placeholder="Baku" required>
                         </div>
-                        <div class="col-lg-6">
-                            <label class="lebel"  for="expmonth">Name on Card</label>
+                        <div class="col-lg-6 col-6">
+                            <label class="lebel" style="display: block; color: white; font-size: 20px; text-align: end;" for="expmonth">Exp. Month</label>
                             <input class="inpu" type="text" type="text" id="cname" name="expmonth" placeholder="September" required/>
                         </div>
                        
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-6" style="padding-top: 20px;">
                             <div class="st">
-                                <label for="state" style="display: block;">State</label>
+                                <label for="state" style="display: block; color: white;">State</label>
                                 <input class="sz" type="text" id="state" name="state" placeholder="nn" required>
                                 <div class="zip">
-                                    <label for="zip" style="display: block;">ZIP</label>
+                                    <label for="zip" style="display: block; color: white; ">ZIP</label>
                                     <input class="sz" type="text" id="zip" name="state" placeholder="zip" required>
                                 </div>
                             </div>
                     
                         </div>
                       
-                        <div class="col-lg-6">
-                            <label for="expire" style="display: block;">Exp. Year</label>
-                            <input class="ex" type="text"type="text" id="expire" name="expire" placeholder="2021" required>
+                        <div class="col-lg-6 col-6" style="text-align: end; padding-top: 20px;">
+                            <label for="expire" style="display: block; color: white;">Exp. Year</label>
+                            <input  class="ex" type="text"type="text" id="expire" name="expire" placeholder="2021" required>
                             <div class="cvv">
-                                <label for="cvv" style="display: block;">CVV</label>
+                                <label for="cvv"style="display: block; color: white; font-size: 20px;">CVV</label>
                                 <input class="ex" type="text"type="text" id="cvv" name="cvv" placeholder="265" required>
                             </div>
                        </div>
-                        
-                        <div class="col-lg-6">
-                          
-                        </div>
-                            </div>
-                        </div>
-                    </div>
-                            <div class="col-lg-3">
-                                <div class="box">
-                                    <p style="display: block;"><a href="#" style="display: flex; justify-content: space-between;">Card <span class="price" style="color: rgb(155, 33, 33);"><i class="fas fa-cart-arrow-down"> </i>&nbsp;<b>4</b></span></a> </p>
-                                    <p><a href="#">Jackets</a><span class="price" >250&nbsp;$</span></p>
-                                    <p><a href="#">T-shorts</a><span class="price" >30&nbsp;$</span></p>
-                                    <p><a href="#">Pantalon</a><span class="price" >50&nbsp;$</span></p>
-                                    <p  style="border-bottom: 2px solid white; padding-bottom: 30px;"><a href="#">Shoe</a><span class="price">70&nbsp;$</span></p>
-                                    <p style="color: rgb(5, 4, 2);">Total <span class="price" style="color: rgb(158, 28, 28);"><b>400 &nbsp;$</b></span> </p>
-                                </div>
-                            </div>
-                    </div>
-                    <lebel style="display: block; color: white;
-                     background-color: rgb(82, 158, 158); width: 410px; border-radius: 5px; padding-left: 5px;">
-                    <input  type="checkbox" checked="checked" name="sameadr" > Shipping address same as billing</lebel>
-                    <div class="check" style="text-align: center; width: 100%;">
+                       <div class="col-lg-12" style="padding-top: 30px;">
+                        <lebel style="display: block; color: white;
+                        background-color: rgb(82, 158, 158); width: 410px; border-radius: 5px; padding-left: 5px;">
+                       <input  type="checkbox" checked="checked" name="sameadr" > Shipping address same as billing</lebel>
+                       </div>
+                      
+                     
+                     </div>
+                 </div>
+                 <div class="col-lg-12 col-12">
+                    <div class="check" style=" display: block; text-align: center; width: 100%; padding-top: 40px;">
                         <input  type="submit" value="Continue To Checkout" class="btn"> 
                     </div>
+                 </div>
+            </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="box">
+                            <p style="display: block;"><a href="#" style="display: flex; justify-content: space-between;">Card <span class="price" style="color: rgb(155, 33, 33);"><i class="fas fa-cart-arrow-down"> </i>&nbsp;<b>4</b></span></a> </p>
+                            <p><a href="#">Jackets</a><span class="price" >250&nbsp;$</span></p>
+                            <p><a href="#">T-shorts</a><span class="price" >30&nbsp;$</span></p>
+                            <p><a href="#">Pantalon</a><span class="price" >50&nbsp;$</span></p>
+                            <p  style="border-bottom: 2px solid white; padding-bottom: 30px;"><a href="#">Shoe</a><span class="price">70&nbsp;$</span></p>
+                            <p style="color: rgb(5, 4, 2);">Total <span class="price" style="color: rgb(158, 28, 28);"><b>400 &nbsp;$</b></span> </p>
+                        </div>
+                    </div>
+        </div>
+                    
+                    
                 </div>
             </div>
            
@@ -460,90 +480,108 @@
 
     <!--------- Footer ----------->
     <footer id="footer">
-      <div class="container pb-5">
-          <div class="row" style="padding-bottom: 40px;">
-              <div class="col-lg-3">
-                  <div class="foot-item">
-                      <h4>Company</h4>
-                      <ul class="list-unstyled p-0">
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Our Service</a></li>
-                          <li><a href="#">Privacy Policy</a></li>
-                          <li><a href="#">Program</a></li>
-                      </ul>
-                  </div>
-  
-              </div>
-              <div class="col-lg-3">
-                  <div class="foot-item">
-                      <h4>Get Help</h4>
-                      <ul class="list-unstyled p-0">
-                          <li><a href="#">FAQ</a></li>
-                          <li><a href="#">Shipping</a></li>
-                          <li><a href="#">Return</a></li>
-                          <li><a href="#">Payment Options</a></li>
-                          <li><a href="#">Order Status</a></li>
-                      </ul>
-                   </div>
-               </div>
-              <div class="col-lg-3">
-                  <div class="foot-item">
-                      <h4>Shop</h4>
-                      <ul class="list-unstyled p-0">
-                          <li><a href="#">Jackets</a></li>
-                          <li><a href="#">Pijamas</a></li>
-                          <li><a href="#">Shoes</a></li>
-                          <li><a href="#">Dress</a></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-lg-3">
-                  <div class="foot-item">
-                  </div>
-                  <h4>Contact</h4>
-                  <ul class="list-unstyled">
-                      <li class="mb-3">
-                          <a href="mailto:samir_salmanov_1988@mail.ru"><img src="img/icons/mail-inbox-app.png" width="20px" alt=""> &nbsp; samir_salmanov_1988@mail.ru</a>
-                      </li>
-                      <li>
-                          
-                          <a href="tel:+994555055050"><img src="img/icons/telephone.png" width="20px" alt="">&nbsp; +994555055050</i></a>
-                      </li>
-                  </ul>  
-              </div>
-          </div>
-          <div class="copywrite justify-content-end">
-              <div class="row">
-                  <div class="col-lg-4">
-                      <h5>© 2020 FORMANSPRORTSTORE.COM</h5>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="row">
-                          <h5>Download Our App</h5> &nbsp; &nbsp;
-                          <a href="#"><img src="img/images/app-store.png" width="100px" alt=""></a>&nbsp;
-                          <a href="#"><img src="img/images/play-store.png" width="100px" alt=""></a>
-                      </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="social-links ">
-  
-                          <ul class="d-flex list-unstyled justify-content-end">
-                             <h5>Follow Us:</h5>
-                              <li><a href="#"><img src="img/icons/youtube (2).png" width="30px" alt=""></a></li>
-                             <li><a href="#"><img src="img/icons/instagram.png" width="30px" alt=""></a></li>
-                              <li><a href="#"><img src="img/icons/facebook.png" width="30px" alt=""></a></li>
-                              <li><a href="#"><img src="img/icons/linkedin.png" width="30px" alt=""></a></li>
-                           </ul>
-                      </div> 
-                  </div>
-  
-          </div>
-  
-          </div>
-          
-      </div>
-  
-  </footer>
+        <div class="container pb-5">
+            <div class="row" style="padding-bottom: 40px;">
+                <div class="col-lg-3 col-6">
+                    <div class="foot-item">
+                        <h4>Company</h4>
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Program</a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="foot-item">
+                        <h4>Get Help</h4>
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                            <li><a href="#">Order Status</a></li>
+                        </ul>
+                     </div>
+                 </div>
+                <div class="col-lg-3 col-3">
+                    <div class="foot-item">
+                        <h4>Shop</h4>
+                        <ul class="list-unstyled p-0">
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Pijamas</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Dress</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-9">
+                    <div class="foot-item">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="mailto:samir_salmanov_1988@mail.ru"><img src="img/icons/mail-inbox-app.png" width="20px" alt=""> &nbsp; samir_salmanov_1988@mail.ru</a>
+                            </li>
+                            <li>
+                                
+                                <a href="tel:+994555055050"><img src="img/icons/telephone.png" width="20px" alt="">&nbsp; +994555055050</i></a>
+                            </li>
+                        </ul>  
+                    </div>
+                
+                </div>
+            </div>
+            <div class="copywrite justify-content-center ">
+                <div class="row">
+                    <div class="col-lg-4 col-12 ">
+                        <h5>© 2020 FORMANSPRORTSTORE.COM</h5>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <div class="row justify-content-center flex-column align-items-center flex-md-row">
+                            <h5>Download Our App:</h5>  
+                            <div class="ml-2 my-3 my-lg-0">
+                            <a href="#"><img src="img/images/app-store.png" width="100px" alt=""></a>&nbsp;
+                            <a href="#"><img src="img/images/play-store.png" width="100px" alt=""></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 follow d-flex">
+                        <div class="social-links d-block">
+                            <div class="row">
+    
+                            <div class="col-lg-5">
+                                <h5>Follow Us:</h5>
+    
+                            </div>
+                            <div class="col-lg-7 mini-follow ">
+                                <div class="social-l d-flex">
+                                    <ul class="d-flex list-unstyled" >
+                                   
+                                        <li><a href="#"><img src="img/icons/youtube (2).png" width="30px" alt=""></a></li>
+                                       <li><a href="#"><img src="img/icons/instagram.png" width="30px" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icons/facebook.png" width="30px" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icons/linkedin.png" width="30px" alt=""></a></li>
+                                     </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+               
+    
+                                
+                        </div> 
+                    </div> 
+                </div>
+    
+            </div>
+    
+            </div>
+            
+        </div>
+    
+    </footer>
   
   
   

@@ -320,6 +320,12 @@
   .copywrite .follow .social-links {
     text-align: center;
   }
+  .copywrite h5 {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .bc-container-fluid {
@@ -496,6 +502,7 @@
   -webkit-box-shadow: 0 0 20px 0 #c2b2ab;
           box-shadow: 0 0 20px 0 #c2b2ab;
   border-radius: 15px;
+  width: 100%;
 }
 
 .container .cart .products .product img:hover {
@@ -596,7 +603,7 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .remove {
     display: none;
   }
@@ -843,16 +850,49 @@
   color: black;
 }
 
-.row-1 .left-sidebar .shop .sidebar-size .sidebar-title-size {
+.row-1 .left-sidebar .sidebar-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row-1 .left-sidebar .sidebar-size .sidebar-title-size {
   padding-bottom: 30px;
 }
 
-.row-1 .left-sidebar .shop .sidebar-size .sidebar-size-list a {
+.row-1 .left-sidebar .sidebar-size .sidebar-size-list .sidebar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row-1 .left-sidebar .sidebar-size .sidebar-size-list .sidebar-list a {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 60px;
+  margin-left: 5px;
   text-decoration: none;
   color: #d859c7;
 }
 
-.row-1 .left-sidebar .shop .sidebar-size .sidebar-size-list a:hover {
+.row-1 .left-sidebar .sidebar-size .sidebar-size-list .sidebar-list a:hover {
+  color: black;
+}
+
+.row-1 .left-sidebar .sidebar-size .sidebar-size-list .sidebar-list span {
+  margin-left: 5px;
+  color: #d859c7;
+}
+
+.row-1 .left-sidebar .sidebar-size .sidebar-size-list .sidebar-list span:hover {
   color: black;
 }
 
@@ -1028,6 +1068,7 @@
 }
 
 .checkout {
+  padding: 30px 0 100px 0;
   background-image: url(../img/road.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1042,10 +1083,12 @@
 
 .checkout .action-page .leb {
   color: white;
-  padding-bottom: 15px;
+  padding-bottom: 4px;
+  font-size: 20px;
 }
 
 .checkout .action-page .inp {
+  height: 35px;
   font-size: medium;
   padding-left: 15px;
   width: 100%;
@@ -1086,16 +1129,17 @@
   text-align: end;
 }
 
-.checkout .payment .ico .icons ul li {
+.checkout .action-page .ico .icons ul li {
+  width: 20%;
   background-color: #140805;
   text-align: center;
-  border-radius: 31px;
+  border-radius: 21px;
   line-height: 59px;
-  -webkit-box-shadow: 0 0 50px 0 #18cc08;
-          box-shadow: 0 0 50px 0 #18cc08;
+  -webkit-box-shadow: 0 0 20px 0 #3f36c4;
+          box-shadow: 0 0 20px 0 #3f36c4;
 }
 
-.checkout .payment .ico .icons ul li:hover {
+.checkout .action-page .ico .icons ul li:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   -webkit-transition: .4s;
@@ -1109,6 +1153,7 @@
 }
 
 .checkout .inpu {
+  height: 35px;
   font-size: medium;
   padding-left: 15px;
   width: 100%;
@@ -1128,7 +1173,7 @@
 }
 
 .checkout .ex {
-  font-size: medium;
+  font-size: 15px;
   padding-left: 15px;
   width: 170px;
   border: none;
@@ -1160,21 +1205,17 @@
   padding-left: 19px;
 }
 
-.check {
-  padding-right: 140px;
-}
-
 .check .btn {
   border-radius: 30px;
   margin-top: 20px;
-  background-color: #d1cccc;
+  background-color: #129daf;
   color: white;
   padding: 12px;
   border: none;
   width: 100%;
-  -webkit-box-shadow: 0 0 20px 0 #464242;
-          box-shadow: 0 0 20px 0 #464242;
-  color: 1px solid #e9e1e1;
+  -webkit-box-shadow: 0 0 20px 0 #3f36c4;
+          box-shadow: 0 0 20px 0 #3f36c4;
+  color: 1px solid #6233ac;
 }
 
 .check .btn:hover {
@@ -1188,11 +1229,13 @@
   width: 323px;
   margin-left: 29px;
   padding: 26px;
-  margin-top: 178px;
-  background-color: grey;
+  margin-top: 60px;
+  background-color: #129daf;
   font-size: 25px;
   color: white;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 20px 0 #a09ebb;
+          box-shadow: 0 0 20px 0 #a09ebb;
 }
 
 .box p {
@@ -1208,7 +1251,7 @@
 .box p a {
   list-style: none;
   text-decoration: none;
-  color: #e9e1e1;
+  color: #082652;
 }
 
 .box p a:hover {

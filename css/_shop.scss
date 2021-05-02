@@ -21,24 +21,44 @@
                     padding-top: 20px;
                 }
             }
-            .sidebar-size{
-                .sidebar-title-size{
-                    padding-bottom: 30px;
-                    
-                }
-                .sidebar-size-list{
+          
+
+        }
+        .sidebar-size{
+            display: flex;
+            .sidebar-title-size{
+                padding-bottom: 30px;
+                
+            }
+            .sidebar-size-list{
+                .sidebar-list{
+                    display: flex;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: space-between;
                     a{
+                        justify-content: space-between;
+                        padding-right: 60px;
+                        margin-left: 5px;
                         text-decoration: none;
                         color: rgb(216, 89, 199);
                         &:hover{
                             color: black;
                         }
                     }
-                    
+                    span{
+                        margin-left: 5px;
+                        color: rgb(216, 89, 199);
+                        &:hover{
+                            color: black;
+                        }
+                    }
                    
                 }
+                
+                
+               
             }
-
         }
     }
     justify-content: space-between;
