@@ -3,7 +3,8 @@
        padding-top: 18px;
         .shop{
             .sidebar{
-               padding-bottom: 110px;
+               padding-bottom: 30px;
+               border-bottom: 2px solid rgb(145, 16, 16);
                 .main-heading{
                  
                     .sidebar-title{
@@ -24,6 +25,23 @@
           
 
         }
+            .sidebar-search{
+                .search-widget{
+                    form{
+                        display: flex;
+                    }
+                    
+                }
+            }
+      
+        .page{
+            
+            h2{
+                font-size: 20px;
+                padding-bottom: 30px;
+            }
+        }
+      
         .sidebar-size{
             display: flex;
             .sidebar-title-size{
